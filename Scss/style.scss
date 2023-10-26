@@ -1,0 +1,70 @@
+@import "variables";
+@import "mixins";
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital@1&display=swap");
+
+* {
+  @include overall;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background-color: $bgColor;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 3rem;
+  background-color: $primaryColor;
+
+  h1 {
+    @include textStyle(2.3rem, bold, $secondaryColor);
+    font-family: "Arvo", serif;
+    cursor: pointer;
+    &:hover {
+      background-color: $secondaryColor;
+      color: $primaryColor;
+      padding: 5px;
+      transition: all 0.2s ease-in-out;
+      border-radius: 5px;
+    }
+  }
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  nav {
+    margin-right: 40px;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  a {
+    @include textStyle(1rem, bold, $secondaryColor);
+    padding: 0px 10px;
+    text-decoration: none;
+    transition: all 0.15s ease-in;
+
+    &:hover {
+      color: $textColor;
+    }
+  }
+}
+
+.berger {
+  display: none;
+}
