@@ -68,3 +68,50 @@ body {
 .berger {
   display: none;
 }
+
+.main {
+  display: flex;
+  margin-top: 2rem 3rem;
+
+  aside {
+    @include bodyStyle;
+    @include boxStyle;
+    flex-direction: column;
+    width: 25%;
+    margin-right: 25px;
+  }
+
+  .course {
+    @include boxStyle;
+    @include textStyle(1rem, bold, $secondaryColor);
+    background-color: $primaryColor;
+    width: 100%;
+    height: 110px;
+    margin: 20px 10px;
+    line-height: 110px;
+    text-align: center;
+  }
+}
+
+.m-main {
+  @include bodyStyle;
+  @include boxStyle;
+  width: 75%;
+  flex-direction: column;
+
+  img{
+    @include boxStyle;
+    width: 450px;
+    height: 250px;
+  }
+
+  h2{
+    @include textStyle(4rem,bold,$primaryColor);
+    margin-top: 2rem;
+  }
+
+  p{
+    @include textStyle(2rem,bold,$textColor);
+    margin-top: 2rem;
+  }
+}

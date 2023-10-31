@@ -64,4 +64,70 @@ body {
 
 .berger {
   display: none;
+}
+
+.main {
+  display: flex;
+  margin-top: 2rem 3rem;
+}
+.main aside {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 25px;
+}
+.main .course {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1rem;
+  weight: bold;
+  color: #fff;
+  background-color: #654fef;
+  width: 100%;
+  height: 110px;
+  margin: 20px 10px;
+  line-height: 110px;
+  text-align: center;
+}
+
+.m-main {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 75%;
+  flex-direction: column;
+}
+.m-main img {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 450px;
+  height: 250px;
+}
+.m-main h2 {
+  font-size: 4rem;
+  weight: bold;
+  color: #654fef;
+  margin-top: 2rem;
+}
+.m-main p {
+  font-size: 2rem;
+  weight: bold;
+  color: rgb(27, 27, 27);
+  margin-top: 2rem;
 }/*# sourceMappingURL=style.css.map */
